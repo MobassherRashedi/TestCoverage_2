@@ -37,8 +37,7 @@ jobs:
 
       # Step 5: Run tests with coverage
       - name: Test with coverage
-        working-directory: CodeCoverage
-        run: dotnet test NUnitTestProject/NUnitTestProject.csproj --collect:"XPlat Code Coverage;Format=cobertura"
+        run: dotnet test ./NUnitTestProject.csproj --collect:"XPlat Code Coverage;Format=cobertura"
 
       # Step 6: Upload coverage to Codecov
       - name: Upload to Codecov
