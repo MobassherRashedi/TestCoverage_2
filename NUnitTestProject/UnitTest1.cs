@@ -2,7 +2,7 @@
 
 namespace NUnitTestProject
 {
-    public class CalculatorServiceTests
+    public class CalculatorTests
     {
         private CalculatorService _calculator;
 
