@@ -1,0 +1,43 @@
+name: CI/CD with Codecov
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - '*'
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build application
+        run: dotnet build --no-restore
+
+      - name: Test with coverage
+        run: dotnet test ApiProject.Tests/ApiProject.Tests.csproj --collect:"XPlat Code Coverage;Format=cobertura"
+
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: MobassherRashedi/TestCoverage_2
+          files: "**/TestResults/*/coverage.cobertura.xml"
+          fail_ci_if_error: true
+          verbose: true
