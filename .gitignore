@@ -1,0 +1,65 @@
+# Ignore .git directory
+.git
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]ppPackages/
+[Bb]in/
+[Oo]bj/
+*.appx
+*.appxbundle
+*.build.csdef
+
+# ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.log
+
+# Auto-generated files
+*.g.*
+*.i.*
+*.cache/
+*.pdb
+*.mdb
+*.exe
+*.dll
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# Npm and Yarn dependencies
+node_modules/
+yarn.lock
+package-lock.json
+
+# Rider and IntelliJ project files
+.idea/
+*.iml
+
+# Coverage and test results
+coverage/
+*.coverage
+*.coveragexml
+test-results/
+
+# Publish output
+*.publishsettings
+*.deploy.cmd
+*.deploy-readme.txt
+*.pubxml
+*.pubxml.user
