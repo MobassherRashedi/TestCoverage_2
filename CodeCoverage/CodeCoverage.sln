@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCoverage", "CodeCoverage.csproj", "{4BDEF422-4A30-42FE-BE9A-8E4130641A10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject", "..\NNuitTestProject\NUnitTestProject.csproj", "{785DD16B-F78B-4363-883D-F84C457C4ACB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject", "..\NUnitTestProject\NUnitTestProject.csproj", "{57B5C77D-A292-4E8C-B6D0-B69478EEBEB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4BDEF422-4A30-42FE-BE9A-8E4130641A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BDEF422-4A30-42FE-BE9A-8E4130641A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BDEF422-4A30-42FE-BE9A-8E4130641A10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{785DD16B-F78B-4363-883D-F84C457C4ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{785DD16B-F78B-4363-883D-F84C457C4ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{785DD16B-F78B-4363-883D-F84C457C4ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{785DD16B-F78B-4363-883D-F84C457C4ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B5C77D-A292-4E8C-B6D0-B69478EEBEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B5C77D-A292-4E8C-B6D0-B69478EEBEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B5C77D-A292-4E8C-B6D0-B69478EEBEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B5C77D-A292-4E8C-B6D0-B69478EEBEB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
