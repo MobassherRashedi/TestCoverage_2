@@ -16,23 +16,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Set up .NET
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '9.0'
 
+      # Step 3: Restore dependencies for the solution
       - name: Restore dependencies
         run: dotnet restore CodeCoverage/CodeCoverage.sln
 
+      # Step 4: Build the application
       - name: Build application
-        run: dotnet build --no-restore
+        working-directory: CodeCoverage
+        run: dotnet build CodeCoverage.sln --no-restore
 
+      # Step 5: Run tests with coverage
       - name: Test with coverage
-        run: dotnet test ApiProject.Tests/ApiProject.Tests.csproj --collect:"XPlat Code Coverage;Format=cobertura"
+        run: dotnet test NUnitTestProject/NUnitTestProject.csproj --collect:"XPlat Code Coverage;Format=cobertura"
 
+      # Step 6: Upload coverage to Codecov
       - name: Upload to Codecov
         uses: codecov/codecov-action@v5
         with:
